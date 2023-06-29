@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,400&display=swap');
+
+@font-face {
+    font-family: Google-sans-Bold;
+    src: url(../fonts3/Google-Sans-web-fonts/TTF/GoogleSansDisplay/GoogleSansDisplay-Bold.ttf);
+}
+
+@font-face {
+    font-family: Google-sans;
+    src: url(../fonts3/Google-Sans-web-fonts/TTF/GoogleSansDisplay/GoogleSansDisplay-Regular.ttf);
+}
+
+@font-face {
+    font-family: Google-sans-Medium;
+    src: url(../fonts3/Google-Sans-web-fonts/TTF/GoogleSansDisplay/GoogleSansDisplay-Medium.ttf);
+}
+
+@font-face {
+    font-family: G-sans-bold;
+    src: url(../fonts2/Google-Sans-Fonts/GoogleSans-Bold.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Google-sans;
+    /* font-family: 'Roboto', sans-serif; */
+}
+
+/* body>#header {
+    position: fixed;
+} */
+
+#header {
+    height: 56px;
+    width: 100vw;
+    padding-left: 68px;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    background-color: white;
+    transition: all 0.15s linear;
+}
+
+
+#header.active {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.logo-section {
+    padding-top: 17.5px;
+}
+
+.header-right-section {
+    display: flex;
+    padding-right: 68px;
+    gap: 24px;
+    align-items: center;
+}
+
+.header-right-section svg {
+    transition: fill 0.2s;
+}
+
+.header-right-section svg:hover {
+    cursor: pointer;
+    fill: #1a73e8;
+}
+
+.profile-picture img {
+    margin-top: 5px;
+    border-radius: 20px;
+    object-fit: contain;
+}
+
+.profile-picture:hover {
+    cursor: pointer;
+}
+
+.welcome {
+    width: 1392px;
+    height: 236px;
+    margin: auto;
+    position: relative;
+    align-items: center;
+}
+
+.welcome-intro {
+    position: absolute;
+    text-align: center;
+    font-family: Google-sans-Bold;
+    top: 25.5%;
+    left: 32%;
+    font-size: 60px;
+    width: 500px;
+    letter-spacing: 0px;
+    font-weight: 500;
+    color: #3c4043;
+    line-height: 68px;
+    letter-spacing: -2px;
+    word-spacing: 0px;
+}
+
+.welcome-intro span {
+    color: #188038;
+}
+
+.product-type,
+.aside {
+    display: flex;
+}
+
+.type {
+    color: #717477;
+
+}
+
+.product-type {
+    padding-top: 62px;
+    width: 318px;
+}
+
+.product-type aside {
+    padding-left: 48px;
+}
+
+/* .checkboxes {
+    padding-top: 5px;
+    letter-spacing: -0.2px;
+} */
+
+.choose {
+    font-family: Google-sans-Bold;
+    padding-bottom: 26px;
+    color: #6c6f72;
+    font-size: 13px;
+    letter-spacing: -0.2px;
+}
+
+.check {
+    color: #4f4f4f;
+    display: flex;
+    gap: 18.5px;
+    padding-bottom: 14px;
+    letter-spacing: -0.2px;
+}
+
+.checkboxes {
+    cursor: pointer;
+}
+
+.check input[type="checkbox"] {
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 2px;
+    border: 1px solid #cecece;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 415px;
+    margin-top: -146.5px;
+    margin-right: 28px;
+    row-gap: 50px;
+}
+
+.product-image {
+    background-color: #f8f9fa;
+    height: 414px;
+    width: 342px;
+    margin-bottom: 55px;
+    position: relative;
+}
+
+.product-image img {
+    transition: width 0.5s, height 0.5s, top 0.5s, left 0.5s;
+    position: absolute;
+    left: 12.5%;
+    top: 19.3%;
+}
+
+.product-image:hover {
+    cursor: pointer;
+}
+
+.product-image:hover.product-image img {
+    cursor: pointer;
+    width: 275px;
+    /* height: 265px; */
+    left: 10.3%;
+    top: 16.15%;
+}
+
+
+.product {
+    position: relative;
+    width: 330px;
+}
+
+.name {
+    font-family: G-sans-bold;
+    position: absolute;
+    bottom: -35px;
+    left: 3px;
+    color: #3c4043;
+}
+
+.help-section {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 180px;
+    margin-top: 115px;
+    gap: 50px;
+}
+
+.help-section p {
+    cursor: pointer;
+    line-height: 46px;
+    color: #464a4d;
+    font-size: 14.5px;
+    transition: color 0.15s;
+}
+
+.help-section p:hover {
+    color: #1967d2;
+}
+
+footer {
+    margin-top: 75px;
+    display: flex;
+}
+
+.social {
+    display: flex;
+    padding-left: 120px;
+    padding-bottom: 15.5px;
+    gap: 16px;
+}
+
+.social svg {
+    fill: #423f3f;
+}
+
+.social svg:hover {
+    cursor: pointer;
+}
+
+.country {
+    display: flex;
+    gap: 12px;
+}
+
+.footer-end {
+    margin-left: 550px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 9px;
+    gap: 41px;
+    margin-top: -5px;
+}
+
+.footer-end p {
+    padding-top: 7px;
+    font-size: 11px;
+    color: #423f3f;
+}
+
+.footer-end p:hover {
+    cursor: pointer;
+}
